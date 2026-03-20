@@ -11,18 +11,19 @@ First, if you haven't already, install uv:
 ```bash
 pip install uv
 ```
+and install CrewAI
+```bash
+uv tool install crewai
+```
 
-Next, navigate to your project directory and install the dependencies:
-
-(Optional) Lock the dependencies and install them by using the CLI command:
+Next, navigate to `code_review_flow` directory and install the dependencies:
 ```bash
 crewai install
 ```
 
-### Customizing
+**Customizing**
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
-
+- Add your `OPENAI_API_KEY` into the `.env` file
 - Modify `src/code_review_flow/crews/code_review_crew/config/agents.yaml` to define your agents
 - Modify `src/code_review_flow/crews/code_review_crew/config/tasks.yaml` to define your tasks
 - Modify `src/code_review_flow/crews/code_review_crew/crew.py` to customize your crew
